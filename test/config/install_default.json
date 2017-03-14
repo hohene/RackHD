@@ -7,7 +7,6 @@
         "https": 8443,
         "httpd": 8010,
         "amqp":5672,
-        "amqp-vagrant":9091,
         "ssh": 2222
       },
       "install": {

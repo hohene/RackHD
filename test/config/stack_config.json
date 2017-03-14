@@ -13,7 +13,12 @@
     "rackhd_host": "localhost",
     "type": "vagrant",
     "ucs_ip" : "172.31.128.252",
-    "ucs_port" : "6080"
+    "ucs_port" : "6080",
+    "install-config" {
+      "ports": {
+        "amqp": "9091"
+      }
+    }
   },
   "vagrant_remote": {
     "rackhd_host": "127.0.0.1",
