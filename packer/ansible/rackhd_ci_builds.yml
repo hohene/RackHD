@@ -17,6 +17,8 @@
     - config_admin_ip
     - snmptool
     - ipmitool
+    - foreman
+    - pm2
     - integrationtest
     - postgresql
     - setuptools
