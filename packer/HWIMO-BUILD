@@ -238,10 +238,8 @@ else
     else
          #Build from scratch, vmware: iso-->vmx-->ova, virtualbox: iso-->ovf-->box
          $PACKER build --force --only=${BUILD_TYPE}-iso  --var-file=$CFG_FILE  ${PACKER_TEMP}  | tee packer-install.log && \
-         sleep 3600
+         sleep 20
          $PACKER build --force --only=${BUILD_TYPE}-${temp_src_format}  --var-file=$CFG_FILE  --var "playbook=${ANSIBLE_PLAYBOOK}_mini" ${PACKER_TEMP}   | tee packer-install.log
-         # $PACKER build --force --only=${BUILD_TYPE}-iso  --var-file=$CFG_FILE  --var "playbook=${ANSIBLE_PLAYBOOK}_mini" ${PACKER_TEMP}   | tee packer-install.log
-         # $PACKER build --force --only=${BUILD_TYPE}-iso --var-file=$CFG_FILE --var "playbook=${ANSIBLE_PLAYBOOK}" ${PACKER_TEMP}   | tee packer-install.log
     fi
 fi
 
