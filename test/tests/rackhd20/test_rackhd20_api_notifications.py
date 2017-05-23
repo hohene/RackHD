@@ -63,7 +63,7 @@ class AmqpWorker(threading.Thread):
         self.channel.start_consuming()
 
 
-@attr(all=True, regression=False, smoke=False)
+@attr(all=True, regression=False, smoke=True)
 class test_alert_notification(unittest.TestCase):
     CLIENT = None
     CATALOGS_COUNT = None
