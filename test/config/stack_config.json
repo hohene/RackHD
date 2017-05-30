@@ -38,5 +38,32 @@
         "amqp_nossl": 5671
       }
     }
+  },
+  "docker": {
+    "rackhd_host": "localhost",
+    "type": "docker",
+    "install-config": {
+      "ports": {
+        "mongo_port": 37017,
+        "http": 9090,
+        "https": 9093,
+        "amqp_ssl": 9093,
+        "amqp_nossl": 5671
+      }
+    }
+  },
+  "ova": {
+    "rackhd_host": "localhost",
+    "type": "vagrant",
+    "install-config": {
+      "ports": {
+        "mongo_port": 37017,
+        "http": 9090,
+        "https": 9093,
+        "amqp_ssl": 9091,
+        "amqp_nossl": 5671,
+        "ssh": 2222
+      }
+    }
   }
 }
